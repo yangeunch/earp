@@ -1,0 +1,137 @@
+main {
+  width: 1200px;
+  margin: 0 auto;
+  background: coral;
+}
+main .path {
+  margin-bottom: 20px;
+}
+main .path dd a {
+  color: #00a0e2;
+}
+main .path dd a em {
+  font-weight: 700;
+  color: #00a0e2;
+}
+main .path dd a::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 6px;
+  background: url(../images/navigate_next.png);
+}
+main .path dd a:last-child:after {
+  display: none;
+}
+main #order {
+  display: flex;
+  justify-content: space-between;
+}
+main #order .product_img {
+  width: 500px;
+}
+main #order .product_img .big img {
+  width: 100%;
+}
+main #order .product_img .thum {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+main #order .product_img .thum a {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+main #order .product_img .thum a img {
+  height: 100%;
+}
+main .order_contents {
+  background: yellow;
+  padding-top: 30px;
+  width: calc(100% - 550px);
+}
+main .order_contents h1 {
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin-bottom: 15px;
+}
+main .order_contents p del {
+  font-size: 1.375rem;
+}
+main .order_contents .price {
+  font-size: 1.625rem;
+  font-weight: 700;
+  padding: 10px 0;
+}
+main .order_contents .deliver {
+  border-top: 1px solid #222;
+  padding: 20px 0;
+}
+main .order_contents em {
+  font-weight: 700;
+  margin-right: 20px;
+}
+main .order_contents h2 {
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+main .order_contents #brands {
+  margin: 10px 0;
+  padding: 10px 5px;
+  width: 100%;
+}
+main .order_contents #galaxy {
+  margin: 10px 0;
+  padding: 10px 5px;
+  width: 100%;
+}
+main .order_contents #iphone {
+  padding: 10px 5px;
+  width: 100%;
+}
+main .order_contents .order_list {
+  margin-top: 30px;
+  padding: 10px 0;
+  display: grid;
+  grid-template-columns: 1fr 50px 50px 150px;
+  grid-template-rows: 50px;
+  align-items: center;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+}
+main .order_contents .order_list .order_product {
+  padding: 10px 0;
+}
+main .order_contents .order_list .order_product .model {
+  margin-top: 10px;
+}
+main .order_contents .order_list #order_num {
+  padding: 0;
+  margin: 0;
+  width: 50px;
+}
+main .order_contents .order_list em {
+  margin: 0;
+  text-align: right;
+}
+main .order_contents .order_list em span {
+  font-weight: 700;
+}
+main .order_contents .total {
+  margin-top: 10px;
+}
+main .order_contents .total h2 {
+  font-size: 1.375rem;
+}
+main .order_contents .btn {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  justify-content: space-between;
+}
+main .order_contents .btn button img {
+  width: 100%;
+}/*# sourceMappingURL=product.css.map */

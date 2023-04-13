@@ -1,0 +1,99 @@
+$font28:1.75rem;
+$font26:1.625rem;
+$font22:1.375rem;
+$font18:1.125rem;
+$font14:0.875rem;
+$color1:#00a0e2;
+$color2:#ff3000;
+$color3:#222;
+$color4:#fff;
+$weight:700;  //글자 굵기
+
+main {width:1200px; margin:0 auto; background: coral; 
+    .path {margin-bottom:20px;
+        dd {
+            a {
+                color:$color1;
+                em {font-weight:700; color:$color1;}
+            }
+            a::after {
+                content:''; display:inline-block;
+                width:24px; height:24px;
+                position:relative; top:6px;
+                background:url(../images/navigate_next.png);
+            }
+            a:last-child:after {display:none;}
+        }
+    } //path:e
+    #order {
+        display:flex; justify-content:space-between;
+        .product_img {width:500px; 
+            .big {
+                img {width:100%;}
+            }
+            .thum {
+                display:flex; justify-content:space-between;
+                padding-top:20px;
+                a {width:150px; height:150px; overflow:hidden;
+                    img {height:100%;}
+                }
+            }
+        }
+    } //order:e
+    .order_contents {background: yellow; padding-top:30px;
+        width:calc(100% - 550px);
+        h1 {font-weight: 700; font-size:$font28; margin-bottom:15px;}
+        p {
+            del{font-size:$font22; }
+            }
+        .price {font-size:$font26; font-weight:700; padding:10px 0;}
+        .deliver {border-top:1px solid $color3; padding:20px 0;}
+            em {font-weight:700; margin-right:20px;}
+            span {}
+            h2 {
+                font-size:$font22; font-weight:700;
+            }
+            #brands {margin:10px 0;
+                padding:10px 5px; width:100%;
+                option {}
+            }
+            h2 {}
+            #galaxy {margin:10px 0;
+                padding:10px 5px; width:100%;
+                option {}
+            }
+            #iphone {
+                padding:10px 5px; width:100%;
+                option {}
+            }
+            .order_list {margin-top:30px; padding:10px 0;
+                display:grid; grid-template-columns:1fr 50px 50px 150px;
+                grid-template-rows: 50px;
+                align-items: center;
+                border-top:1px solid $color3;
+                border-bottom:1px solid $color3;
+                .order_product {padding:10px 0;
+                    .type {}
+                    .model {margin-top:10px;}
+                }
+                #order_num {padding:0; margin:0; width:50px;}
+                    #cancle {
+                        img {}
+                        }
+                        em {margin:0; text-align: right;
+                            span {font-weight:700;}
+                    }
+                }
+                        .total {margin-top:10px;
+                            h2 {font-size:$font22;}
+                        }
+                        .btn {margin-top:30px;
+                            display:grid; grid-template-columns: repeat(3, 32%);
+                            justify-content: space-between;
+                            button {img {width:100%;}}
+                            #buy {}
+                            #cart {}
+                            #wish {}
+                        }
+    }
+}
